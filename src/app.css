@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body,
+  p,
+  h6,
+  a {
+    @apply text-sm;
+  }
+
+  h1 {
+    @apply text-6xl font-extrabold;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl font-semibold;
+  }
+
+  a {
+    @apply text-blue font-semibold;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  textarea {
+    @apply border-2 border-grey-300 py-4 px-5 rounded-lg outline-none;
+  }
+}
